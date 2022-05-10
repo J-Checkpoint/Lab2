@@ -3,10 +3,12 @@ import utilities
 
 
 def main():
-    circle_area = utilities.calculate_circle_area()
+    circle_radius = int(input("enter the radius of a circle in cm:"))
+    circle_area = utilities.calculate_circle_area(circle_radius)
     print("the area of circle is:", circle_area)
 
-    sphere_volume = utilities.calculate_sphere_volume()
+    sphere_radius = int(input("enter the radius of a sphere in cm:"))
+    sphere_volume = utilities.calculate_sphere_volume(sphere_radius)
     print("enter the radius of a sphere in cm:", sphere_volume)
 
     bmi = utilities.calculate_bmi()
